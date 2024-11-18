@@ -1,0 +1,177 @@
+.nav-wrapper{
+    background: rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position:sticky;
+    top:0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+}
+
+.nav-content{
+    max-width:1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin:0 auto;
+    height: 70px;
+}
+.logo{
+    width: 12rem;
+    height: auto;
+}
+
+.nav-content ul{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.nav-content li{
+    margin: 0 1.5rem;
+}
+
+.menu-item{
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #ffff;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-item::before{
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    /* background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+    border-radius: 0.5rem;
+    color: white;
+    position: absolute;
+    bottom: -0.6rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover::before{
+    width: 100%;
+   text-decoration: none;
+   color: #fff;
+}
+
+.contact-btn{
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    padding: 0.6rem 2rem;
+    border: none;
+    outline: 1.5px solid transparent;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.contact-btn:hover{
+    color:#a993fe;
+    background: #000;
+    outline: 1.5px solid #a993fe;
+}
+
+.menu-btn{
+    width:2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: #ffff;
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    padding: 0.6rem 2rem;
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4 ease;
+    display: none;
+}
+
+.menu-btn:hover{
+    color: #a993fe;
+    background: #000;
+    border: 1px solid #a993fe;
+}
+@media (max-width:425px) {
+    .logo{
+        width: 10 rem;
+        height: auto;
+    }
+}
+
+@media (max-width:769px)  {
+    .menu-btn{
+        display: block;
+    }
+
+    .nav-content ul{
+        display: none;
+    }
+}
+
+@media (max-width:1325px) {
+    .nav-wrapper{
+        padding: 0 2rem;
+    }
+}
+.modal-content {
+  border-radius: 10px; /* Rounded corners for the modal */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.modal-header {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text for header */
+}
+
+.modal-title {
+  font-weight: bold; /* Bold title */
+}
+
+.modal-body {
+  padding: 20px; /* Spacing inside the modal */
+}
+
+.resume-iframe {
+  width: 100%; /* Full width */
+  height: 400px; /* Set height for the iframe */
+  border: none; /* Remove default border */
+  margin-bottom: 20px; /* Space below the iframe */
+}
+
+
+.certificate-images h6 {
+  margin-bottom: 15px; /* Space below the title */
+  font-size: 1.2rem; /* Larger font size for visibility */
+}
+
+.certificate-img {
+  width: 30%; /* Fixed width for certificates */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 10px; /* Space between images */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Secondary button color */
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Darker on hover */
+}

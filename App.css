@@ -1,0 +1,109 @@
+.container {
+  max-width: 1300px !important;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding: 0 2rem;
+  }
+}/* Project.css */
+/* Project.css */
+
+/* Grid Container for Project Items */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Space between grid items */
+}
+
+/* Individual Project Item */
+.grid-item {
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s; /* Smooth scale effect on hover */
+}
+
+/* Scale effect on hover */
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+/* Project Image Styling */
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Match border radius */
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed; /* Fixed position to cover the whole screen */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  right: 0; /* Align to right */
+  bottom: 0; /* Align to bottom */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* Ensure modal is above all other content */
+}
+
+/* Modal Content Box */
+.modal-content {
+  background: white; /* White background for content */
+  padding: 20px; /* Padding inside the modal */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 800px; /* Maximum width of the modal */
+  width: 100%; /* Full width on small screens */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  text-align: center; /* Center text inside modal */
+  height: 600px;
+}
+
+/* Modal Image Styling */
+/* Project.css */
+
+/* Image Gallery Styling */
+.image-gallery {
+  display: flex; /* Use flexbox to arrange images in a row */
+  justify-content: space-between; /* Space out images evenly */
+  margin-bottom: 15px; /* Space below the image gallery */
+  overflow-x: auto; /* Allow horizontal scrolling if images exceed the container width */
+}
+
+/* Modal Image Styling */
+
+
+/* Optional: Remove margin from the last image */
+.image-gallery .modal-image:last-child {
+  margin-right: 0; /* No margin for the last image */
+}
+
+
+/* Video Styling */
+video {
+  max-width: 100%; /* Responsive video width */
+  margin-top: -40px !important; /* Space above video */
+}
+
+/* Button Styling */
+button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  margin-top: 10px;
+  width: 100px;
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
